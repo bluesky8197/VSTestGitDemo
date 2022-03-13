@@ -181,7 +181,12 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	CString  strResult=_T("");
 	strResult.Format(_T("TEST GIT iSum = %d"), iSum);
+
+
+	int iSum2 = iSum * iSum + iCountX*iCountY; //Test modify by local and push 
+	strResult.Format(_T("TEST GIT iSum2 = %d"), iSum2);
 	AfxMessageBox(strResult);
+
 
 
 	return 0;
