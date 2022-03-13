@@ -173,6 +173,17 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	CMFCToolBar::SetBasicCommands(lstBasicCommands);
 
+	//TEST GIT OPERATION
+	int  iCountX = 1;
+	int  iCountY = 5;
+
+	int  iSum = iCountX * iCountX + iCountY * iCountY;
+
+	CString  strResult=_T("");
+	strResult.Format(_T("TEST GIT iSum = %d"), iSum);
+	AfxMessageBox(strResult);
+
+
 	return 0;
 }
 

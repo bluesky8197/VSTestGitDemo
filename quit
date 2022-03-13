@@ -1,0 +1,104 @@
+[1mdiff --git a/Debug/VSTestGitDemo.exe b/Debug/VSTestGitDemo.exe[m
+[1mdeleted file mode 100644[m
+[1mindex 15f7200..0000000[m
+Binary files a/Debug/VSTestGitDemo.exe and /dev/null differ
+[1mdiff --git a/Debug/VSTestGitDemo.ilk b/Debug/VSTestGitDemo.ilk[m
+[1mdeleted file mode 100644[m
+[1mindex d6b701d..0000000[m
+Binary files a/Debug/VSTestGitDemo.ilk and /dev/null differ
+[1mdiff --git a/Debug/VSTestGitDemo.pdb b/Debug/VSTestGitDemo.pdb[m
+[1mdeleted file mode 100644[m
+[1mindex 4094289..0000000[m
+Binary files a/Debug/VSTestGitDemo.pdb and /dev/null differ
+[1mdiff --git a/VSTestGitDemo.sdf b/VSTestGitDemo.sdf[m
+[1mindex 82b0be3..e8173f9 100644[m
+Binary files a/VSTestGitDemo.sdf and b/VSTestGitDemo.sdf differ
+[1mdiff --git a/VSTestGitDemo/MainFrm.cpp b/VSTestGitDemo/MainFrm.cpp[m
+[1mindex 55b2d89..b202241 100644[m
+[1m--- a/VSTestGitDemo/MainFrm.cpp[m
+[1m+++ b/VSTestGitDemo/MainFrm.cpp[m
+[36m@@ -173,6 +173,17 @@[m [mint CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)[m
+ [m
+ 	CMFCToolBar::SetBasicCommands(lstBasicCommands);[m
+ [m
+[32m+[m	[32m//TEST GIT OPERATION[m
+[32m+[m	[32mint  iCountX = 1;[m
+[32m+[m	[32mint  iCountY = 5;[m
+[32m+[m
+[32m+[m	[32mint  iSum = iCountX * iCountX + iCountY * iCountY;[m
+[32m+[m
+[32m+[m	[32mCString  strResult=_T("");[m
+[32m+[m	[32mstrResult.Format(_T("TEST GIT iSum = %d"), iSum);[m
+[32m+[m	[32mAfxMessageBox(strResult);[m
+[32m+[m
+[32m+[m
+ 	return 0;[m
+ }[m
+ [m
+[1mdiff --git a/VSTestGitDemo/x64/Debug/MainFrm.obj b/VSTestGitDemo/x64/Debug/MainFrm.obj[m
+[1mindex 67552ba..f9191fa 100644[m
+Binary files a/VSTestGitDemo/x64/Debug/MainFrm.obj and b/VSTestGitDemo/x64/Debug/MainFrm.obj differ
+[1mdiff --git a/VSTestGitDemo/x64/Debug/VSTestGitDemo.log b/VSTestGitDemo/x64/Debug/VSTestGitDemo.log[m
+[1mindex 87f11f5..094c0c7 100644[m
+[1m--- a/VSTestGitDemo/x64/Debug/VSTestGitDemo.log[m
+[1m+++ b/VSTestGitDemo/x64/Debug/VSTestGitDemo.log[m
+[36m@@ -1,21 +1,8 @@[m
+[31m-﻿Build started 2022/3/13 9:45:26.[m
+[31m-     1>Project "D:\program\VSTestGitDemo\VSTestGitDemo\VSTestGitDemo.vcxproj" on node 2 (Rebuild target(s)).[m
+[32m+[m[32m﻿Build started 2022/3/13 16:40:51.[m
+[32m+[m[32m     1>Project "D:\program\VSTestGitDemo\VSTestGitDemo\VSTestGitDemo.vcxproj" on node 2 (Build target(s)).[m
+      1>ClCompile:[m
+[31m-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"x64\Debug\VSTestGitDemo.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt stdafx.cpp[m
+[31m-         stdafx.cpp[m
+[31m-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\VSTestGitDemo.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt ClassView.cpp FileView.cpp MainFrm.cpp OutputWnd.cpp PropertiesWnd.cpp ViewTree.cpp VSTestGitDemo.cpp VSTestGitDemoDoc.cpp VSTestGitDemoView.cpp[m
+[31m-         VSTestGitDemoView.cpp[m
+[31m-         VSTestGitDemoDoc.cpp[m
+[31m-         VSTestGitDemo.cpp[m
+[31m-         ViewTree.cpp[m
+[31m-         PropertiesWnd.cpp[m
+[31m-         OutputWnd.cpp[m
+[32m+[m[32m         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\VSTestGitDemo.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt MainFrm.cpp[m
+          MainFrm.cpp[m
+[31m-         FileView.cpp[m
+[31m-         ClassView.cpp[m
+[31m-         Generating Code...[m
+[31m-       ResourceCompile:[m
+[31m-         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /Ix64\Debug\ /nologo /fo"x64\Debug\VSTestGitDemo.res" VSTestGitDemo.rc [m
+        Link:[m
+          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\program\VSTestGitDemo\x64\Debug\VSTestGitDemo.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:"D:\program\VSTestGitDemo\x64\Debug\VSTestGitDemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\program\VSTestGitDemo\x64\Debug\VSTestGitDemo.lib" /MACHINE:X64 x64\Debug\VSTestGitDemo.res[m
+          x64\Debug\ClassView.obj[m
+[36m@@ -29,8 +16,8 @@[m
+          x64\Debug\VSTestGitDemoDoc.obj[m
+          x64\Debug\VSTestGitDemoView.obj[m
+          VSTestGitDemo.vcxproj -> D:\program\VSTestGitDemo\x64\Debug\VSTestGitDemo.exe[m
+[31m-     1>Done Building Project "D:\program\VSTestGitDemo\VSTestGitDemo\VSTestGitDemo.vcxproj" (Rebuild target(s)).[m
+[32m+[m[32m     1>Done Building Project "D:\program\VSTestGitDemo\VSTestGitDemo\VSTestGitDemo.vcxproj" (Build target(s)).[m
+ [m
+ Build succeeded.[m
+ [m
+[31m-Time Elapsed 00:00:02.85[m
+[32m+[m[32mTime Elapsed 00:00:00.45[m
+[1mdiff --git a/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/CL.read.1.tlog b/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/CL.read.1.tlog[m
+[1mindex 2fa0194..eaf433c 100644[m
+Binary files a/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/CL.read.1.tlog and b/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/CL.read.1.tlog differ
+[1mdiff --git a/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/CL.write.1.tlog b/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/CL.write.1.tlog[m
+[1mindex 3cbbcf2..0260f74 100644[m
+Binary files a/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/CL.write.1.tlog and b/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/CL.write.1.tlog differ
+[1mdiff --git a/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/link.read.1.tlog b/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/link.read.1.tlog[m
+[1mindex eea4672..e1e7c7e 100644[m
+Binary files a/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/link.read.1.tlog and b/VSTestGitDemo/x64/Debug/VSTestGitDemo.tlog/link.read.1.tlog differ
+[1mdiff --git a/VSTestGitDemo/x64/Debug/vc140.idb b/VSTestGitDemo/x64/Debug/vc140.idb[m
+[1mindex 10ee9ec..59dc365 100644[m
+Binary files a/VSTestGitDemo/x64/Debug/vc140.idb and b/VSTestGitDemo/x64/Debug/vc140.idb differ
+[1mdiff --git a/VSTestGitDemo/x64/Debug/vc140.pdb b/VSTestGitDemo/x64/Debug/vc140.pdb[m
+[1mindex 00bc0c7..8c347e3 100644[m
+Binary files a/VSTestGitDemo/x64/Debug/vc140.pdb and b/VSTestGitDemo/x64/Debug/vc140.pdb differ
+[1mdiff --git a/x64/Debug/VSTestGitDemo.exe b/x64/Debug/VSTestGitDemo.exe[m
+[1mindex 39af4e3..36d31ce 100644[m
+Binary files a/x64/Debug/VSTestGitDemo.exe and b/x64/Debug/VSTestGitDemo.exe differ
+[1mdiff --git a/x64/Debug/VSTestGitDemo.ilk b/x64/Debug/VSTestGitDemo.ilk[m
+[1mindex 3b40d7f..1843c93 100644[m
+Binary files a/x64/Debug/VSTestGitDemo.ilk and b/x64/Debug/VSTestGitDemo.ilk differ
+[1mdiff --git a/x64/Debug/VSTestGitDemo.pdb b/x64/Debug/VSTestGitDemo.pdb[m
+[1mindex 7244c89..ed98862 100644[m
+Binary files a/x64/Debug/VSTestGitDemo.pdb and b/x64/Debug/VSTestGitDemo.pdb differ
